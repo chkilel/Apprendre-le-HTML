@@ -2,7 +2,10 @@ lockfileVersion: 5.3
 
 specifiers:
   '@iconify-json/et': ^1.0.1
+  '@iconify-json/icomoon-free': ^1.0.1
   '@iconify-json/logos': ^1.0.1
+  '@iconify-json/twemoji': ^1.0.1
+  '@iconify-json/vscode-icons': ^1.0.1
   '@slidev/cli': ^0.27.2
   '@slidev/theme-apple-basic': ^0.20.0
   '@slidev/theme-default': '*'
@@ -16,7 +19,10 @@ dependencies:
 
 devDependencies:
   '@iconify-json/et': 1.0.1
+  '@iconify-json/icomoon-free': 1.0.1
   '@iconify-json/logos': 1.0.1
+  '@iconify-json/twemoji': 1.0.1
+  '@iconify-json/vscode-icons': 1.0.1
 
 packages:
 
@@ -61,6 +67,12 @@ packages:
       '@iconify/types': 1.0.9
     dev: true
 
+  /@iconify-json/icomoon-free/1.0.1:
+    resolution: {integrity: sha512-bGmj348K1VBs4Qz6iNfxO9ijjhQJo27XQL3Osp1i2H7HZ8HaIswpwpz3bi8cxwwpLszTbfwZhrV/C50O9xe4hw==}
+    dependencies:
+      '@iconify/types': 1.0.9
+    dev: true
+
   /@iconify-json/logos/1.0.1:
     resolution: {integrity: sha512-rb3IOhL2ilOdALOTg3vltsMhXpGcRVSryDRyCoZcsqCDGH27havNfdZO+VETk2+CPA7SF1nMmhkm7CDkd5sXRQ==}
     dependencies:
@@ -72,6 +84,18 @@ packages:
     dependencies:
       '@iconify/types': 1.0.9
     dev: false
+
+  /@iconify-json/twemoji/1.0.1:
+    resolution: {integrity: sha512-viObtFZYDIHb2nXA1AWofyf3NEE4oO0NN6zpSOOgdV2r6WB/hHoPpV3P1T942vxH+OAVUPB7d08QAE5cIs7BEw==}
+    dependencies:
+      '@iconify/types': 1.0.9
+    dev: true
+
+  /@iconify-json/vscode-icons/1.0.1:
+    resolution: {integrity: sha512-h0hPaS3fJ21sMh9NrASmxEOjbJcRkpJHtmHPlgqQUBUMwSO4KT/PX3eaTXuNi5JsBzr3vTwtU78xUW5BVyiPOQ==}
+    dependencies:
+      '@iconify/types': 1.0.9
+    dev: true
 
   /@iconify/json-tools/1.0.10:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
