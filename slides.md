@@ -232,6 +232,7 @@ L’élément HTML `<p>` définit un paragraphe.
 ---
 layout: two-cols
 ---
+
 # Paragraphes HTML
 
 ```html
@@ -243,7 +244,7 @@ layout: two-cols
 <html>
   <body>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    <p>aaaaaaaLorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
     </p>
     <p>Les navigateurs ajoutent automatiquement un espace blanc (une marge)
@@ -264,12 +265,10 @@ layout: two-cols
 
 <div class="p-4 mt-7">
 
-<p class="bg-indigo-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-<p class="bg-indigo-50">Les navigateurs ajoutent automatiquement un espace blanc (une marge) avant et après un paragraphe.</p>
+<p class="bg-indigo-50">aaaaaaaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p><p class="bg-indigo-50">Les navigateurs ajoutent automatiquement un espace blanc (une marge) avant et après un paragraphe.</p>
 <p class="bg-indigo-50">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
 
 </div>
-
 
 
 ---
@@ -287,7 +286,7 @@ Le navigateur supprimera automatiquement tous les espaces et lignes supplémenta
 
 ```html
       <p>
-      This paragraph<br>
+      This paragraph
       contains a lot of lines
       in the source code,
       but the browser
@@ -305,7 +304,7 @@ Le navigateur supprimera automatiquement tous les espaces et lignes supplémenta
 
   <div>
     <p>
-      This paragraph<br>
+      This <br> paragraph
       contains a lot of lines
       in the source code,
       but the browser
@@ -342,7 +341,7 @@ L’élément est utilisé pour séparer le contenu (ou définir une modificatio
 
   <div>
     <h1>This is heading 1</h1>
-    <p>This is some text.</p>
+    <p>This <hr> is some text.</p>
     <hr>
     <h2>This is heading 2</h2>
     <p>This is some other text.</p>
@@ -386,28 +385,490 @@ Utilisez `<br>` si vous voulez un saut de ligne (une nouvelle ligne) sans commen
 
 <div grid="~ cols-2 gap-4">
 
-```html
-Titre
-<p>
-    ligne 1
-    ligne 2
-    ligne 3
-    ligne 4
-    ligne 5
-    ligne 6
-</p>
-```
+  ```html
+  Titre
+  <p>
+      ligne 1
+      ligne 2
+      ligne 3
+      ligne 4
+      ligne 5
+      ligne 6
+  </p>
+  ```
+
   <div>
     <h1>Titre</h1>
     <p>
       ligne 1<br>
       ligne 2<br>
       ligne 3<br>
-      <hrs>
+      <hr>
       ligne 4<br>
       ligne 5<br>
       ligne 6<br>
     </p>
     <hr>
   </div>
+</div>
+
+
+
+---
+
+# Titres HTML
+Les titre HTML sont définis avec les balises `<h1>` à `<h6>`
+
+> `<h1>` définit le titre le plus important.
+>
+> `<h6>` définit le titre le moins important.
+
+<div grid="~ cols-2 gap-4s">
+
+<div class="mt-10">
+
+  ```html
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  ```
+
+</div>
+<div class=" ml-10 mt-10">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6 class="!capitalize">Heading 6</h6>
+</div>
+
+</div>
+
+**Remarque**
+> Les navigateurs ajoutent automatiquement des espaces blancs (une marge) avant et après les titres.
+
+
+---
+
+# Les titres sont importants
+
+Les moteurs de recherche utilisent les titres pour indexer la structure et le contenu de vos pages Web.
+
+Les utilisateurs parcourent souvent une page par ses titres. Il est important d’utiliser des titres pour afficher la structure du document.
+
+Les titres `<h1> ` doivent être utilisés pour les titres principaux, suivis des titres `<h2>`, puis des moins importants `<h3>`, et ainsi de suite.
+
+**Remarque**
+> Utilisez des titres HTML pour les titres uniquement.
+>
+> N’utilisez pas les titres pour rendre le texte GRAND ou gras.
+
+<div grid="~ cols-2 gap-4">
+
+</div>
+
+
+---
+
+# Mise en forme du texte HTML
+HTML contient plusieurs éléments pour définir un texte avec une signification particulière.
+
+Les éléments de mise en forme ont été conçus pour afficher des types spéciaux de texte :
+
+- `<b>` - Texte en gras
+- `<strong>` - Texte important
+- `<i>` - Texte en italique
+- `<em>` - Texte souligné
+- `<mark>` - Texte marqué
+- `<small>` - Texte plus petit
+- `<del>` - Texte supprimé
+- `<ins>` - Texte inséré
+- `<sub>` - Texte en indice
+- `<sup>` - Texte en exposant
+
+
+---
+
+# Les balises HTML `<b>` et `<strong>`
+Texte en gras
+
+<div grid="~ cols-2 gap-4">
+
+  <div>
+
+  La balise HTML `<b>` définit le texte en gras, sans importance.
+
+  ```html
+  <b>This text is bold</b>
+  ```
+
+  <b>This text is bold</b>
+  </div>
+
+  <div>
+
+  La balise HTML `<strong>` définit le texte avec une grande importance. Le contenu à l’intérieur est généralement affiché en gras.
+
+  ```html
+    <strong>This text is important!</strong>
+  ```
+
+  <strong>This text is important!</strong>
+  </div>
+
+</div>
+
+---
+# Les balises HTML `<i>` et `<em>`
+L’élément HTML `<i>` définit une partie du texte affiché en italique.
+
+<div grid="~ cols-2 gap-4">
+
+  <div>
+
+  La balise `<i>` est souvent utilisée pour indiquer un terme technique, une phrase d’une autre langue, une pensée, etc.
+
+  ```html
+  <i>This text is italic</i>
+  ```
+
+  <i>This text is italic</i>
+
+  </div>
+
+  <div>
+
+  La balise HTML `<em>` utilisée pour mettre le texte en valeur. Le contenu à l’intérieur est généralement affiché en italique.
+
+  ```html
+  <em>This text is emphasized</em>
+  ```
+
+  <em>This text is emphasized</em>
+
+  </div>
+
+</div>
+
+---
+
+# La balise HTML `<small>`
+<br>
+
+La balise HTML `<small>` définit un texte plus petit
+
+**Exemple**
+```html
+<small>This is some smaller text.</small>
+```
+
+<div grid="~ cols-2 gap-4">
+
+<div class="pt-20">
+<h6> Small </h6>
+ <small>This is some smaller text.</small>
+</div>
+<div class="pt-20">
+<h6> Normal </h6>
+ This is some smaller text.s
+</div>
+
+</div>
+
+---
+
+# La balise HTML `<mark>`
+La balise HTML `<mark>` définit le texte qui doit être marqué ou mis en surbrillance
+
+Exemple
+```html
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+```
+<br>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+---
+
+# Les balises HTML `<del>` `<ins>`
+<br>
+
+<div grid="~ cols-2 gap-4">
+
+<div class="pt-20">
+
+La balise HTML `<del>` définit un texte qui a été supprimé d’un document. Les navigateurs affiche généralement une ligne à travers le texte supprimé.
+
+**Exemple**
+
+```html
+<p>My favorite color is <del>blue</del> red.</p>
+```
+
+<p>My favorite color is <del>blue</del> red.</p>
+
+</div>
+
+<div class="pt-20">
+
+La balise HTML `<ins>` définit un texte qui a été inséré dans un document. Les navigateurs soulignent généralement le texte inséré.
+
+**Exemple**
+
+```html
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+```
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+</div>
+
+</div>
+
+---
+
+# Les balises HTML `<sub>` `<sup>`
+
+<div grid="~ cols-2 gap-4">
+
+<div class="pt-10">
+
+La balise HTML `<sub>` définit le texte en indice. Le texte en indice apparaît en demi-caractère en dessous de la ligne normale et est parfois rendu dans une police plus petite. Le texte en indice peut être utilisé pour les formules chimiques, comme:
+
+H<sub>2</sub>O
+
+**Exemple**
+```html
+<p>This is <sub>subscripted</sub> text.</p>
+```
+
+<p>This is <sub>subscripted</sub> text.</p>
+
+</div>
+
+<div class="pt-10">
+
+La balise HTML `<sup>` définit le texte en exposant. Le texte en exposant apparaît en demi-caractère au-dessus de la ligne normale et est parfois rendu dans une police plus petite. Le texte en exposant peut être utilisé par exemple pour les surfaces, comme:
+
+m<sup>2</sup>
+
+***Exemple***
+```html
+<p>This is <sup>superscripted</sup> text.</p>
+```
+<p>This is <sup>superscripted</sup> text.</p>
+
+</div>
+</div>
+
+
+---
+
+# Commentaires HTML
+
+Les commentaires HTML ne sont pas affichés dans le navigateur, mais ils peuvent aider à documenter votre code source HTML.
+
+<div grid="~ cols-2 gap-4">
+  <div class="pt-2">
+
+  **Ajouter des commentaires**
+
+  Avec les commentaires, vous pouvez placer des notifications et des rappels dans votre code HTML:
+
+  ```html
+  <!-- This is a comment -->
+  <p>This is a paragraph.</p>
+  <!-- Remember to add more information here -->
+  ```
+
+  <!-- This is a comment -->
+  <p>This is a paragraph.</p>
+  <!-- Remember to add more information here -->
+
+  </div>
+
+  <div class="pt-2">
+
+  **Masquer le contenu**
+
+  Ce qui peut être utile pour masquer un contenu temporairement
+
+  ```html
+  <p>This is a paragraph.</p>
+  <!-- <p>This is another paragraph </p> -->
+  <p>This is a paragraph too.</p>
+  ```
+
+  <p>This is a paragraph.</p>
+  <!-- <p>This is another paragraph </p> -->
+  <p>This is a paragraph too.</p>
+
+  </div>
+</div>
+
+---
+
+# Commentaires HTML (suite)
+
+
+<div grid="~ cols-2 gap-4">
+  <div class="pt-2">
+
+  **Ajouter des commentaires**
+
+  Vous pouvez également masquer plus d’une ligne, tout ce qui se trouve entre `<!--` et  `-->` sera masqué de l’affichage.
+
+  ```html
+  <p>This is a paragraph.</p>
+  <!--
+  <p>Look at this cool image:</p>
+  <img border="0" src="pic_trulli.jpg" alt="Trulli">
+  -->
+  <p>This is a paragraph too.</p>
+  ```
+
+  <p>This is a paragraph.</p>
+  <!--
+  <p>Look at this cool image:</p>
+  <img border="0" src="pic_trulli.jpg" alt="Trulli">
+  -->
+  <p>This is a paragraph too.</p>
+  </div>
+
+  <div class="pt-2">
+
+  **Masquer le contenu en ligne**
+
+  Les commentaires peuvent être utilisés pour masquer des parties au milieu du code HTML.
+
+  ```html
+  <p>This <!-- great text --> is a paragraph.</p>
+  ```
+
+  <p>This <!-- great text --> is a paragraph.</p>
+
+  </div>
+</div>
+
+---
+
+
+# Images HTML
+Les images peuvent améliorer la conception et l’apparence d’une page Web.
+
+
+<div grid="~ cols-2 gap-4">
+
+  <div class="">
+
+  **Syntaxe des images HTML**
+  <div class="text-sm">
+
+  - La balise HTML `<img>` est utilisée pour incorporer une image dans une page Web.
+  - Les images ne sont pas techniquement insérées dans une page Web, les images sont liées à des pages Web. La balise `<img>` crée un espace de rétention pour l’image référencée.
+  - La balise `<img>` est vide, elle contient uniquement des attributs et n’a pas de balise de fermeture.
+  - La balise `<img>` possède deux attributs obligatoires :
+    - **src** - Spécifie le chemin d’accès à l’image
+    - **alt** - Spécifie un texte de remplacement pour l’image
+
+  </div>
+
+  </div>
+
+
+  <div class="pt-2">
+
+  ```html
+  <img src="animal.jpg" alt="animal">
+  ```
+
+  <img src="static/animal.jpg" alt="animal">
+  </div>
+
+</div>
+
+---
+
+# Images HTML (Dimensions)
+Les images peuvent améliorer la conception et l’apparence d’une page Web.
+
+
+<div grid="~ cols-2 gap-4">
+
+  <div class="">
+
+  **Largeur et hauteur**
+
+  Les attributs `width` et `height` servent pour definir la taille d'affichage des images.
+
+  - `width` : Largeur
+  - `height` : Hauteur
+
+
+
+  </div>
+
+  <div class="pt-2">
+
+  ```html
+  <img src="animal.jpg" alt="animal" width="128" height="128">
+  ```
+
+  <img src="static/animal.jpg" alt="animal" width="128" height="128">
+  </div>
+
+</div>
+
+
+---
+
+# Images HTML (Emplacement)
+Les images peuvent améliorer la conception et l’apparence d’une page Web.
+
+
+<div grid="~ cols-2 gap-x-4">
+
+  <div class="">
+
+  **Images dans un autre dossier**
+
+  Si vous avez vos images dans un sous-dossier, vous devez inclure le nom du dossier dans l’attribut :src
+  </div>
+
+  <div>
+  <img src="static/landscape.jpg" alt="Payasage" width="128" height="128">
+  </div>
+
+  <div class="col-span-2">
+
+  ```html
+    <img src="/images/html5.gif" alt="Payasage" width="128" height="128">
+  ```
+  </div>
+
+  <div class="">
+
+  **Images sur un autre serveur/site Web**
+
+  Certains sites Web pointent vers une image sur un autre serveur.
+  Pour pointer vers une image sur un autre serveur, vous devez spécifier une URL absolue (lien complèt) dans l’attribut **src**
+
+  </div>
+
+  <div>
+  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
+  </div>
+
+  <div class="col-span-2">
+
+  ```html
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
+  ```
+  </div>
+
 </div>
