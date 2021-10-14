@@ -443,7 +443,7 @@ Les titre HTML sont définis avec les balises `<h1>` à `<h6>`
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
-    <h6 class="!capitalize">Heading 6</h6>
+    <h6 class="!capitalize !opcity-100">Heading 6</h6>
 </div>
 
 </div>
@@ -482,7 +482,7 @@ Les éléments de mise en forme ont été conçus pour afficher des types spéci
 - `<b>` - Texte en gras
 - `<strong>` - Texte important
 - `<i>` - Texte en italique
-- `<em>` - Texte souligné
+- `<em>` - Texte qui souligne un propos, une ideé, ...
 - `<mark>` - Texte marqué
 - `<small>` - Texte plus petit
 - `<del>` - Texte supprimé
@@ -518,6 +518,45 @@ Texte en gras
   ```
 
   <strong>This text is important!</strong>
+  </div>
+
+</div>
+
+---
+
+# Les balises HTML `<i>` et `<em>`
+Texte en gras
+
+<div grid="~ cols-2 gap-4">
+
+  <div>
+
+  La balise HTML `<i>` définit une partie du texte affichée en italique.
+
+  Elle est souvent utilisée pour indiquer un terme technique, une phrase d’une autre langue, une pensée, un nom de propre, etc.
+
+  **Exemple**
+
+  ```html
+  <i>This text is italic</i>
+  ```
+
+  <i>This text is italic</i>
+
+  </div>
+
+  <div>
+
+  La balise HTML `<em>` définit une partie du texte dans une autre voix ou humeur. Le contenu à l’intérieur est généralement affiché en italique
+
+  Un lecteur d’écran prononcera les mots avec un accent en stressant le mot.
+
+
+  ```html
+    <em>This text is emphasized</em>
+  ```
+
+  <em>This text is emphasized</em>ss
   </div>
 
 </div>
@@ -858,6 +897,7 @@ Les images peuvent améliorer la conception et l’apparence d’une page Web.
   Certains sites Web pointent vers une image sur un autre serveur.
   Pour pointer vers une image sur un autre serveur, vous devez spécifier une URL absolue (lien complèt) dans l’attribut **src**
 
+
   </div>
 
   <div>
@@ -872,3 +912,108 @@ Les images peuvent améliorer la conception et l’apparence d’une page Web.
   </div>
 
 </div>
+
+---
+
+# Liens HTML
+
+On retrouve les liens dans presque toutes les pages Web. Les liens permettent aux utilisateurs de naviger de page en page.
+
+**Liens HTML - Hyperliens**
+
+Les liens HTML s'appellent des hyperliens.
+
+Vous pouvez cliquer sur un lien pour passer à un autre document.
+
+Lorsque vous déplacez la souris sur un lien, la curseur se transforme en une petite main.
+
+> **Remarque** :
+>
+> Un lien n’a pas besoin d’être du texte. Un lien peut être une image ou tout autre élément HTML !
+
+---
+
+# Liens HTML
+<br>
+
+**Liens HTML - Syntaxe**
+
+La balise HTML `<a>` définit un lien hypertexte. elle a la syntaxe suivante :
+
+```html
+<a href="url">link text</a>
+```
+
+L’attribut le plus important de l’élément `<a>` est l’attribut **href**, qui indique la destination du lien.
+
+Le texte du lien est la partie qui sera visible par le lecteur.
+
+En cliquant sur le texte du lien, vous enverrez le lecteur à l’adresse URL spécifiée.
+
+**Exemple**
+
+```html
+<a href="https://www.groupescolairemalki.com">Visit groupescolairemalki.com!</a>
+```
+<a href="https://www.groupescolairemalki.com" target="_blank">Visit groupescolairemalksi.com!</a>
+
+---
+
+# Liens HTML - URL absolue et relatives
+
+<br>
+
+Un lien vers un autre site utilisent une URL absolue (une adresse Web complète) dans l’attribut **href**.
+
+Un lien local (un lien vers une page du même site Web) est spécifié avec une URL relative (sans la partie **https://www** ):
+
+<div grid="~ cols-2 gap-x-4">
+
+  <div class="">
+
+  **Liens externe**
+
+  ```html
+  <h2>Absolute URLs</h2>
+  <p><a href="https://www.groupescolairemalki.com/">Malki school</a></p>
+  <p><a href="https://www.google.com/">Google</a></p>
+  ```
+  <h2>Absolute URLs</h2>
+  <p><a href="https://www.groupescolairemalki.com/">Malki school</a></p>
+  <p><a href="https://www.google.com/">Google</a></p>
+
+  </div>
+
+  <div class="">
+
+  **Lien interne**
+
+  ```html
+  <h2>Relative URLs</h2>
+  <p><a href="html_images.html">HTML Images</a></p>
+  <p><a href="/css/cours.html">Cours CSS</a></p>
+  ```
+  <h2>Relative URLs</h2>
+  <p><a href="html_images.html">HTML Images</a></p>
+  <p><a href="/css/cours.html">Cours CSS</a></p>
+
+  </div>
+
+</div>
+
+---
+
+# Liens HTML - Utiliser une image comme lien
+
+<br>
+
+Pour utiliser une image comme lien, il suffit de mettre la balise `<img>` à l’intérieur de la balise `<a>`
+
+```html
+<a href="https://www.google.com/">
+  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
+</a>
+```
+<a href="https://www.google.com/">
+  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
+</a>
