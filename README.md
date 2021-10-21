@@ -1,4 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Welcome to Learn HTML!
 
 To start the slide show:
 
