@@ -1017,3 +1017,23 @@ Pour utiliser une image comme lien, il suffit de mettre la balise `<img>` à l�
 <a href="https://www.google.com/">
   <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
 </a>
+
+
+---
+
+# Exercices
+## Exercices de base HTML
+
+- Créez une page Web et définissez son titre sur : <br> « Ceci est une page Web ».
+- Affichez votre nom à l’écran en premier titre et votre niveau scolaire en paragraphe.
+- Affichez le message « Quand cette page Web a-t-elle été créée ? Vérifiez le titre de la page pour la réponse. » à l’écran, et redéfinissez le titre de la page sur la date d'aujourd'hui.
+
+---
+
+# Exercices 2
+## Exercices de mise en forme de texte HTML
+
+- Imprimez les carrés des chiffres de 1 à 20. Chaque numéro doit être sur une ligne distincte, à côté du chiffre 2 en exposant, un signe égal et le résultat. <br> Exemple : 10<sup>2</sup> = 100
+- Imprimez les 10 premiers lettres de l'alphabet en gras avec leur position en indice avec un saut de ligne entre chaque lettre.<br> Exemple <b>Z</b><sub>26</sub>
+- Imprime un titre de niveau h1 suivi d’une ligne horizontale. <br>Sous la ligne horizontale, imprimez un paragraphe relatif au texte du titre.
+- Imprimez du texte supprimé et inséré de votre choix. <br>le text supprimé doit etre <del><mark>marqué</mark></del> et le text inséré en <ins><i>italique</i></ins>
