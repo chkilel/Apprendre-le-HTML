@@ -21,7 +21,7 @@
 - `<html>` est l’élément racine d’une page HTML
 - `<head>` contient des méta-informations sur la page HTML
 - `<title>` spécifie un titre pour la page HTML (qui est affiché dans la barre de titre du navigateur ou dans l’onglet de la page)
-- `<body>` définit le corps du document, c'est le conteneur pour tous les contenus visibles, tels que  les paragraphes, les images, les liens hypertexte, les tableaux, leslistes, etc.
+- `<body>` définit le corps du document, c'est le conteneur pour tous les contenus visibles, tels que  les paragraphes, les images, les liens hypertexte, les tableaux, les listes, etc.
 - `<h1>` définit un grand titre
 - `<p>` définit un paragraphe
 
@@ -65,8 +65,8 @@ Balise | Definition | Exemple
  `<strong>` | Texte important|  <strong>This text is important!</strong>
  `<i>` | Texte en italique|  <i>This text is italic</i>
  `<em>` | Texte qui souligne un propos, une ideé, ...| <em>This text is emphasized</em>
- `<mark>` | Texte marqué| <small>This is some smaller text.</small>
- `<small>` | Texte plus petit| <p>Do not forget to buy <mark>milk</mark> today.</p>
+ `<mark>` | Texte marqué| <p>Do not forget to buy <mark>milk</mark> today.</p>
+ `<small>` | Texte plus petit| <small>This is some smaller text.</small>
  `<del>` | Texte supprimé| <del>I'm a deleted text</del>
  `<ins>` | Texte inséré| <ins>I'm am inserted text</ins>
  `<sub>` | Texte en indice| H<sub>2</sub>O
