@@ -323,8 +323,8 @@ Le navigateur supprimera automatiquement tous les espaces et lignes supplémenta
 
 ---
 
-# Règles horizontales HTML
-La balise `<hr>` définit une rupture dans une page HTML et est le plus souvent affichée sous forme de règle horizontale.
+# Ligne horizontales HTML
+La balise `<hr>` définit une rupture dans une page HTML et est le plus souvent affichée sous forme de ligne horizontale.
 
 L’élément est utilisé pour séparer le contenu (ou définir une modification) dans une page HTML :`<hr>`
 
