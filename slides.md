@@ -825,8 +825,8 @@ Les images peuvent améliorer la conception et l’apparence d’une page Web.
   ```html
   <img src="animal.jpg" alt="animal">
   ```
+  ![animal](/animal.jpg)
 
-  <img src="static/animal.jpg" alt="animal">
   </div>
 
 </div>
@@ -858,7 +858,7 @@ Les images peuvent améliorer la conception et l’apparence d’une page Web.
   <img src="animal.jpg" alt="animal" width="128" height="128">
   ```
 
-  <img src="static/animal.jpg" alt="animal" width="128" height="128">
+  <img src="/public/animal.jpg" alt="animal" width="128" height="128">
   </div>
 
 </div>
@@ -880,7 +880,7 @@ Les images peuvent améliorer la conception et l’apparence d’une page Web.
   </div>
 
   <div>
-  <img src="static/landscape.jpg" alt="Payasage" width="128" height="128">
+  <img src="/public/landscape.jpg" alt="Payasage" width="128" height="128">
   </div>
 
   <div class="col-span-2">
