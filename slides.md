@@ -1018,8 +1018,99 @@ Pour utiliser une image comme lien, il suffit de mettre la balise `<img>` à l�
   <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" width="300">
 </a>
 
+---
+
+# Liens vers un autre répertoire
+<br>
+
+On peut avoir des répertoires et sous-répertoires
+<br>
+
+**On ajoute le nom du répertoire pour descendre :**
+>
+> `monrepertoire/mapage.html`
+
+<br>
+
+**On ajoute `../` pour remonter si on se trouve dans un sous répertoire :**
+>
+> `../index.html`
 
 ---
+
+# Descendre dans un sous répertoire
+<br>
+
+Depuis la racine index vers page2 :
+
+```html
+<a href="page_interne/page-10.html">page 10</a>
+```
+Si on avait d’autres sous-répertoires :
+
+```html
+<a href="page_interne/autre_sous_rep/page-20.html">page 20</a>
+```
+---
+
+# Remonter d’un répertoire
+<br>
+
+**Depuis la page2 vers la racine :**
+
+```html
+<a href="../index.html"> l'accueil</a>
+```
+
+**Si on veut remonter plusieurs répertoires (autant de `../` que de répertoires):**
+
+```html
+<a href="../../index.html"> l'accueil</a>
+```
+
+---
+
+# Ouvrir un lien dans un nouvel onglet
+<br>
+
+L’attribut `target="_blank"` permet d’ouvrir un lien dans une nouvelle fenêtre/onglet du navigateur
+
+```html
+<a href="index.html" target="_blank" >
+```
+
+---
+
+# Des liens « internes » ou ancres internes
+<br>
+
+Le lien interne permet de renvoyer l’utilisateur à l’intérieur d’une page
+
+La cible est définie par un `id="ancre_du_lien"`
+
+On utilise `<a href="#ancre_du_lien">` pour créer le lien
+Utilisé pour les liens « retour en haut de page » par exemple,
+
+---
+
+# Favicon
+
+Un favicon est une petite image affichée à côté du titre de la page dans l’onglet du navigateur.
+
+![Favicon](/static/fav.png)
+
+Pour ajouter un favicon à votre site Web, enregistrez votre image favicon dans le répertoire racine appelé images et enregistrez votre image favicon dans ce dossier. Un nom commun pour une image de favicon est **favicon.ico ou favicon.png ...**
+
+Ensuite, ajoutez un élément `<link>` à votre fichier « html », après l’élément `<title>`, comme ceci:
+
+```html
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+```
+---
+
 
 # Exercices
 ## Exercices de base HTML
