@@ -1109,9 +1109,75 @@ Ensuite, ajoutez un élément `<link>` à votre fichier « html », après l’�
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 ```
+
+---
+layout: two-cols
 ---
 
+# Listes HTML
 
+Les listes HTML permettent de regrouper un ensemble d'éléments associés dans des listes.
+
+
+
+## Liste HTML non ordonnée
+
+```html
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+```
+::right::
+
+<div class="text-sm ml-10 mt-46">
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+</div>
+
+---
+layout: two-cols
+---
+
+# Listes HTML
+
+Les listes HTML permettent de regrouper un ensemble d'éléments associés dans des listes.
+
+
+
+## Liste HTML ordonnée
+
+```html
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+```
+::right::
+
+<div class="text-sm ml-10 mt-46">
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+
+
+
+</div>
+
+
+---
 # Exercices
 ## Exercices de base HTML
 
