@@ -1127,7 +1127,7 @@ Les listes HTML permettent de regrouper un ensemble d'éléments associés dans 
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
-</ul>  
+</ul>
 
 ```
 ::right::
@@ -1138,7 +1138,7 @@ Les listes HTML permettent de regrouper un ensemble d'éléments associés dans 
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
-</ul>  
+</ul>
 
 </div>
 
@@ -1159,7 +1159,7 @@ Les listes HTML permettent de regrouper un ensemble d'éléments associés dans 
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
-</ol>  
+</ol>
 
 ```
 ::right::
@@ -1170,14 +1170,240 @@ Les listes HTML permettent de regrouper un ensemble d'éléments associés dans 
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
-</ol>  
-
-
+</ol>
 
 </div>
 
+---
+
+# Tableaux HTML
+Un tableau sert à organiser des informations structurées sous forme tabulaire
+Il se compose de lignes organisées elles-mêmes en cellules
+
+<table border = "1">
+    <tr>
+      <th>Team</th>
+      <th>Ranking</th>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>South Africa</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>3</td>
+    </tr>
+</table>
 
 ---
+
+# Créer un tableau : `<table>`
+***
+<br>
+
+
+- La balise `<table> </table>` permet d’indiquer le début et la fin du tableau.
+
+
+- La balise `<tr> </tr>` caractérise une nouvelle ligne
+
+
+- La balise `<td> </td>` marque le contenu d’une cellule dans une ligne
+
+---
+layout: two-cols
+---
+
+# Tableaux HTML
+Un tableau en HTML se compose de cellules de tableau à l'intérieur de lignes et de colonnes
+
+```html
+<table>
+  <tr>
+    <td>ligne 1 / Colonne 1</td>
+    <td>ligne 1 / Colonne 2</td>
+    <td>ligne 1 / Colonne 3</td>
+  </tr>
+  <tr>
+    <td>ligne 2 / Colonne 1</td>
+    <td>ligne 2 / Colonne 2</td>
+    <td>ligne 2 / Colonne 3</td>
+  </tr>
+</table>
+```
+
+::right::
+<div class="text-sm ml-2 mt-29 space-y-9">
+<table border=1>
+  <tr>
+    <td>ligne 1 / Colonne 1</td>
+    <td>ligne 1 / Colonne 2</td>
+    <td>ligne 1 / Colonne 3</td>
+  </tr>
+  <tr>
+    <td>ligne 2 / Colonne 1</td>
+    <td>ligne 2 / Colonne 2</td>
+    <td>ligne 2 / Colonne 3</td>
+  </tr>
+</table>
+
+> Le nombre d'éléments `<td>` au sein des éléments `<tr>` doit rester le même dans la mesure ou chaque ligne possède un même nombre de cellules, nombre qui correspond au nombre de colonnes du tableau.
+</div>
+
+---
+layout: two-cols
+---
+# Ajouter une entête avec `<th>`
+
+```html
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+```
+
+::right::
+
+<div class="text-sm ml-2 mt-29 space-y-9">
+
+ `<th>` peut remplacer `<td>` pour créer une cellule d’entête au tableau
+
+> Par défaut affiché en gras et centré dans les navigateurs
+</div>
+
+---
+layout: two-cols
+---
+# Bonus - Fusion de cellules
+
+```html
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+```
+
+::right::
+
+<div class="text-sm ml-2 mt-18 space-y-9">
+
+- Il est possible de fusionner certaines cellules entre elles avec l’attribut `colspan=" nombredecellules"` qui se place sur la cellule (th ou td)
+<br>
+- La valeur numérique de cet attribut précise le nombre de colonnes du tableau que couvre la cellule.
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+</div>
+
+---
+layout: two-cols
+---
+# Bonus - Fusion de lignes
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+```
+
+::right::
+
+<div class="text-sm ml-2 mt-16 space-y-9">
+
+Il est possible de fusionner des lignes avec l’attribut `rowspan=" nombredelignes"` qui se place sur la cellule (th ou td)
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+# Exercices
+## Tableaux  HTML
+
+<img src="/t1.png">
+---
+
+# Exercices
+## Tableaux  HTML
+
+<img src="/t2.png">
+
+---
+
+# Exercices
+## Tableaux  HTML
+
+<img src="/t3.png">
+
+---
+
 # Exercices
 ## Exercices de base HTML
 
